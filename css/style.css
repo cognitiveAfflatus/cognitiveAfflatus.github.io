@@ -192,4 +192,13 @@ a{
 	text-align:center;
 }
 
+#validation{
+	position:relative;
+	float:left;
+	top:-30px;
+	margin:0;
+	border:0;
+	padding:0;
+}
+
 /*also the ico file is from deltarune but i dont think i can really source a video game. i got it from spriter's resource. it's a 16x16 pixel star. i seriously doubt anyone will notice or care*/
