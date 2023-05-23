@@ -1,12 +1,15 @@
+/* define custom font */
 @font-face{
 	font-family: '8bitOperatorPlus-Bold';
 	src: url(../font/8bitOperatorPlus-Bold.ttf);
 	font-weight:normal;
 	font-style:normal;
 }
+
+/*i was having a lot of issues with the background actually covering the entire page so i just decided to be thorough. this probably isn't necessary but it isn't against the style guides and it works so!!!*/
 html{
 	height:100%;
-	background:url(../img/bg.png);
+	background:url(../img/bg.png); <!-- this image is from undertale, but i took a screen shot off of the undertale fandom page for the area waterfall and edited it to look nice as the background. not that i want to attribute anything to fandom the site is awful but that is where i got it because i didn't want to start the game up myself just for the screenshot. -->
 	background-repeat: repeat;
 }
 
@@ -19,16 +22,19 @@ body{
 	font-size:20px;
 }
 
+/*blue underline is ugly.*/
 a{
 	text-decoration:none;
 }
 
+/*something to keep everything in line*/
 .container{
 	width:80%;
 	margin:auto;
 	overflow:hidden;
 }
 
+/*i dont think i ever actually needed this? but im keeping it here just in case elements ever start getting funky in positioning*/
 .clr{
 	clear:both;
 }
@@ -41,9 +47,11 @@ a{
 	font-size:30px;
 	height:100px;
 }
+
 #main-header h1{
 	margin:0;
 }
+/*this was literally just for that one joke page*/
 #main-header p{
 	margin:0;
 	font-size:8px;
@@ -61,6 +69,7 @@ a{
 	list-style: none;
 }
 
+/*i think the nav bar was very cool. that's it*/
 #navbar li{
 	padding:5px 10px;
 	margin:0 25px;
@@ -84,6 +93,7 @@ a{
 	border-color:white;
 }
 
+/*the little arrow is how you tunnel to a deeper element so that the box and text change colors at the same time*/
 #navbar li:hover > a{
 	color:yellow;
 }
@@ -98,7 +108,7 @@ a{
 	margin:0 10%;
 	padding:15px 20px;
 }
-
+/* responsiveness! */
 #blog a{
 	color:yellow;
 }
@@ -112,6 +122,7 @@ a{
 	padding: 0 0 15px 0;
 }
 
+/* a lot of this code is repetitive but if i put it on any higher of a level it starts causing weird problems so*/
 #about-content{
 	background:black;
 	color:white;
@@ -122,6 +133,7 @@ a{
 	text-decoration:underline;
 }
 
+/* this splits the two halves of the about page into sections */
 #about-main{
 	float:left;
 	width:70%;
@@ -144,6 +156,7 @@ a{
 	margin-top:40px;
 }
 
+/* i wanted to make it look like they were sitting on top of the footer. i think i did a pretty good job on it. */
 #sit{
 	position:relative;
 	top:-200px;
@@ -164,3 +177,5 @@ a{
 	margin:0 10%;
 	text-align:center;
 }
+
+<!-- also the .ico file is from deltarune. but. i dont think i can really source a video game. i got it from spriter's resource. it's a 16x16 pixel start i seriously doubt anyone will notice or care. -->
