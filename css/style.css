@@ -6,10 +6,11 @@
 }
 html{
 	height:100%;
+	background:url(../img/bg.png);
 }
 
 body{
-	background:url(../img/bg.png);;
+	background:url(../img/bg.png);
 	font-family: '8bitOperatorPlus-Bold', monospace;
 	margin: 0;
 	height:100%;
@@ -160,4 +161,12 @@ a{
 	color:white;
 	margin:0 10%;
 	text-align:center;
+}
+
+#validation{
+	float:left;
+	position:relative;
+	bottom:-50px;
+	margin:0;
+	padding:0;
 }
