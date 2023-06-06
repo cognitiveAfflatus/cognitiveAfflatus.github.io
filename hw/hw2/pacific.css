@@ -1,0 +1,145 @@
+*{
+	margin:0;
+}
+
+html{
+	height: 100%;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background: url("ptrbackground.jpg");
+	background-color: #00569f;
+	background-repeat: repeat-x;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	margin: auto 10px;
+}
+
+#wrapper {
+	margin: 3% auto;
+	width: 80%;
+	min-width: 600px;
+	min-height: 40%;
+	max-height: 90%;
+	display: grid;
+	grid-template-columns: 200px auto;
+	grid-template-rows: 50px auto 50px;
+	grid-template-areas:
+	'header header'
+	'menu main'
+	'menu footer';
+	gap: 0;
+}
+
+header{
+	background: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-color: rgb(0, 0, 50);
+	background-position: right;
+	color: white;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	grid-area: header;
+}
+
+
+#content {
+	background-color: white;
+	box-sizing: border-box;
+	padding: 0 30px;
+	grid-area: main;
+}
+
+#content ul{
+	list-style-image: url('marker.gif');
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+#content ul li{
+	list-style-position: inside;
+}
+
+#content img{
+	float:left;
+	margin-right: 20px;
+}
+
+.resort{
+	color: rgb(94,125,171);
+	font-weight: bold;
+}
+
+nav{
+	background-color: rgb(145,199,227);
+	float: left;
+	width: 200px;
+	padding: 20px 0 0 0;
+	box-sizing: border-box;
+	display:flex;
+	flex-direction: column;
+	grid-area: menu;
+}
+
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+
+nav a{
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(0, 0, 50);
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #3399CC;
+	margin: 20px 0;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	font-style: italic;
+	padding-left: 20px;
+	box-sizing: border-box;
+	grid-area: footer;
+}
+
