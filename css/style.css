@@ -77,6 +77,9 @@ a{
 	text-align:center;
 	line-height:2;
 	margin:0 10%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 #navbar ul{
@@ -141,6 +144,7 @@ a{
 	background:black;
 	color:white;
 	margin:0 10%;
+	min-height: 60%;
 }
 
 #about-content h2{
@@ -183,13 +187,43 @@ a{
 	background:black;
 	color:white;
 	margin:0 10%;
+	min-height: 60%;
 }
 
-#info-content{
+#contact-info ul{
+	list-style-image: url('../img/star.ico');
+}
+
+#lol{
+	list-style: none;
+}
+
+#lol li{
+	list-style-image: url('../img/star.ico');
+}
+
+#hw-content{
 	background:black;
 	color:white;
 	margin:0 10%;
-	text-align:center;
+	min-height: 60%;
+	font-size: 25px;
+}
+
+#hw-content ul{
+	list-style-image: url('../img/star.ico');
+}
+
+#hw-content a{
+	color:yellow;
+}
+
+#hw-content a:hover{
+	color:white;
+}
+
+#hw-content a:visited{
+	color:grey;
 }
 
 #validation{
