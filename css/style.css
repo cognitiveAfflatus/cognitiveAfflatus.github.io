@@ -194,6 +194,14 @@ a{
 	list-style-image: url('../img/star.ico');
 }
 
+#contact-info a{
+	color:yellow;
+}
+
+#contact-info a:hover{
+	color:white;
+}
+
 #lol{
 	list-style: none;
 }
