@@ -1,0 +1,63 @@
+<!--
+File: index.html
+GUI Assignment 3
+Thomas Dorval, UMass Lowell Computer Science, thomas_dorval@student.uml.edu
+Copyright (c) 2023 by Dorval. All rights reserved.
+Updated by Thomas on May 22, 2023 at 10:27 PM
+Instructor: Professor Wenjin Zhou
+Sources of Help: TraveryMedia on Youtube and StackOverflow
+Brief Overview: here's is my very scuffed multiplcation table program. i do not know if i actually met all the requirements but the requirements are vague and i WOULD ask about them but the thing is due in an hour and my father has been in and out of the hospital for the past week so i hope you are understanding if this is not up to scuff. i am also exhausted right now. i am turning this in as is. im 99% sure it meets standards. even if it is a bit ugly. but like. it's math. i think these sorts of semi-ugly pages are fitting for things like this.
+-->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HW3</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="Thomas D.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JS Multiplication Table</h1>
+        <p>This program is still fairly unstable! Please only enter numbers, and try to keep the total range less than about 400 total entries.</p>
+    </header>
+    
+    <form>
+        <div class="slider-container" id="slider1">
+            <label for="num1">Rows Lower Bound:</label><br>
+            <input class="table-slider" type="number" id="num1" name="num1" min="-100" max="100" value="0">
+        </div>
+        
+        <div class="slider-container" id="slider2">
+            <label for="num2">Rows Upper Bound:</label><br>
+            <input class="table-slider" type="number" id="num2" name="num2" min="-100" max="100" value="0">
+        </div>
+
+        <div class="slider-container" id="slider3">
+            <label for="num3">Columns Lower Bound:</label><br>
+            <input class="table-slider" type="number" id="num3" name="num3" min="-100" max="100" value="0">
+        </div>
+        
+        <div class="slider-container" id="slider4">
+            <label for="num4">Columns Upper Bound:</label><br>
+            <input class="table-slider" type="number" id="num4" name="num4" min="-100" max="100" value="0">
+        </div>
+    </form>
+    
+    <br>
+    
+    <button type="button" onclick="tablePrep();">Store numbers</button>
+    <p id="error-handler"></p>
+    <div id="scroll-table">
+        <table id="multi-table"></table>
+    </div>
+
+</body>
+</html>
