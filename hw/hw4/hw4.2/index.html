@@ -1,0 +1,90 @@
+<!--
+File: index.html
+GUI Assignment 4
+Thomas Dorval, UMass Lowell Computer Science, thomas_dorval@student.uml.edu
+Copyright (c) 2023 by Dorval. All rights reserved.
+Updated by Thomas on June 21, 2023 at 3:29 PM
+Instructor: Professor Wenjin Zhou
+Sources of Help: TraveryMedia on Youtube, JQuery's API and extention APIs, and StackOverflow
+Brief Overview: I tried my best on this. I do not know how to do multi-delete and I wasted so much time on other stuff. Life isn't helping much either. This is the best I've got.
+-->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HW4</title>
+    <meta name="description" content="A multiplication table program.">
+    <meta name="author" content="Thomas D.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css">
+    
+    <style>
+        #tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JS Multiplication Table</h1>
+        <!--<p></p>-->
+    </header>
+    
+    <form id="multiples" onsubmit="return false">
+        <p id="box1">
+            <label for="num1">Rows Lower Bound:</label><br>
+            <input type="number" id="row-low" name="rowLow" required value="-50" min="-50" max="50" oninput="inputValues();">
+        </p>
+        
+        <p id="box2">
+            <label for="num2">Rows Upper Bound:</label><br>
+            <input type="number" id="row-high" name="rowHigh" required value="50" min="-50" max="50" oninput="inputValues();">
+        </p>
+
+        <div id="slider1" onclick="slideValues();"></div>
+
+        <p id="box3">
+            <label for="num3">Columns Lower Bound:</label><br>
+            <input type="number" id="col-low" name="colLow" required value="-50" min="-50" max="50" oninput="inputValues();">
+        </p>
+        
+        <p id="box4">
+            <label for="num4">Columns Upper Bound:</label><br>
+            <input type="number" id="col-high" name="colHigh" required value="50" min="-50" max="50" oninput="inputValues();">
+        </p>
+        
+        <div id="slider2" onclick="slideValues();"></div>
+        
+        <!--<input class="btn btn-primary" id="submit-button" type="submit" value="Store values" onclick="tablePrep();">-->
+    </form>
+    
+    
+    <p id="error-handler"></p>
+    <div id="scroll-table">
+        <table id="multi-table"></table>
+    </div>
+    <button id="store-button" type="button" onclick="storeTable();" hidden>Store table</button>
+    <div id="table-manager" hidden>
+        <div id="my-tables">
+            <ul id="my-tabs">
+            </ul>
+        </div>
+        <!--
+        <form id="delete-tabs" onsubmit="return false">
+            <div id="del-container">
+            </div>
+            </br>
+            <input class="btn btn-primary" id="delete-button" type="submit" value="Delete selected tabs" onclick="deleteTabs();">
+        </form>
+        -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/*
+File: style.css
+GUI Assignment 4
+Thomas Dorval, UMass Lowell Computer Science, thomas_dorval@student.uml.edu
+Copyright (c) 2023 by Dorval. All rights reserved.
+Updated by Thomas on June 21, 2023 at 3:29 PM
+Instructor: Professor Wenjin Zhou
+Sources of Help: TraveryMedia on Youtube, JQuery's API and extention APIs, and StackOverflow
+Brief Overview: I do not have the time to make this look good right now.
+*/
+
+body{
+    height: 100%;
+    margin: auto auto;
+    width: 80%;
+    text-align: center;
+    display: block;
+    background-color: #fff2cc;
+}
+
+#multiples{
+    margin: auto auto;
+    width: 40%;
+    display: grid;
+    gap: 10px 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#box1{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+#box2{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+#slider1{
+    grid-row: 2;
+    grid-column: 1/4;
+}
+
+#box3{
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+#box4{
+    grid-column: 3/4;
+    grid-row: 3;
+}
+
+#slider2{
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+#submit-button{
+    grid-column: 2/3;
+    grid-row: 5;
+    padding: 0;
+    height: 30px;
+    width: 85px;
+    margin: auto;
+}
+
+#scroll-table{
+    margin: auto auto;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+.ch-cont{
+    float: left;
+}
