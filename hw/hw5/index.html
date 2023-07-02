@@ -1,0 +1,72 @@
+<!--
+File: index.html
+GUI Assignment 5
+Thomas Dorval, UMass Lowell Computer Science, thomas_dorval@student.uml.edu
+Copyright (c) 2023 by Dorval. All rights reserved.
+Updated by Thomas on July 1, 2023 at 10:41 PM
+Instructor: Professor Wenjin Zhou
+Sources of Help: TraveryMedia on Youtube, JQuery's API and extention APIs, and StackOverflow
+Brief Overview: If I get a zero on this I still pass with an 80 and I am frankly out of ideas and patience. 
+Considering my life situation, I'm suprised I got this much done as is.
+-->
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Scrabble</title>
+    <meta name="description" content="Scrabble">
+    <meta name="author" content="Thomas D.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/pieces.json"></script> -->
+</head>
+<body>
+    <header>
+        <h1>Scabble</h1>
+    </header>
+    
+    <div class="grid-container">
+        <ul class="tile-container" id="play-area">
+            <li class="play-tile tile" id="pTile1"></li>
+            <li class="play-tile tile" id="pTile2"></li>
+            <li class="play-tile tile bonus-tile" id="pTile3"></li>
+            <li class="play-tile tile" id="pTile4"></li>
+            <li class="play-tile tile" id="pTile5"></li>
+            <li class="play-tile tile" id="pTile6"></li>
+            <li class="play-tile tile bonus-tile" id="pTile7"></li>
+            <li class="play-tile tile" id="pTile8"></li>
+            <li class="play-tile tile bonus-tile" id="pTile9"></li>
+            <li class="play-tile tile" id="pTile10"></li>
+            <li class="play-tile tile" id="pTile11"></li>
+            <li class="play-tile tile" id="pTile12"></li>
+            <li class="play-tile tile bonus-tile" id="pTile13"></li>
+            <li class="play-tile tile" id="pTile14"></li>
+            <li class="play-tile tile" id="pTile15"></li>
+        </ul>
+        
+        <ul class="tile-container" id="hold-area">
+            <li class="hold-tile tile" id="hTile1"></li>
+            <li class="hold-tile tile" id="hTile2"></li>
+            <li class="hold-tile tile" id="hTile3"></li>
+            <li class="hold-tile tile" id="hTile4"></li>
+            <li class="hold-tile tile" id="hTile5"></li>
+            <li class="hold-tile tile" id="hTile6"></li>
+            <li class="hold-tile tile" id="hTile7"></li>
+        </ul>
+        
+        <div id="word-hold">
+            <p class="score-container" id="word-title">Current Word:</p>
+            <p class="score-container" id="current-word"></p>
+            <p class="score-container" id="score-title">Current Score:</p>
+            <p class="score-container" id="current-score">0</p>
+        </div>
+    </div>
+</body>
+</html>

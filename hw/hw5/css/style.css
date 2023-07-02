@@ -1,0 +1,93 @@
+/*
+File: style.css
+GUI Assignment 5
+Thomas Dorval, UMass Lowell Computer Science, thomas_dorval@student.uml.edu
+Copyright (c) 2023 by Dorval. All rights reserved.
+Updated by Thomas on July 1, 2023 at 10:41 PM
+Instructor: Professor Wenjin Zhou
+Sources of Help: TraveryMedia on Youtube, JQuery's API and extention APIs, and StackOverflow
+Brief Overview: If I get a zero on this I still pass with an 80 and I am frankly out of ideas and patience. 
+Considering my life situation, I'm suprised I got this much done as is.
+*/
+body{
+    display:block;
+    text-align:center;
+    width:80%;
+    margin:auto;
+    background-color: 
+}
+
+#grid-container{
+    display: grid;
+    grid-template-area:
+        'play'
+        'hold';
+    grid-gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+#play-area{
+    grid-area: play;
+    background-image: url("../graphics_data/scrabble_tray_2.png");
+    background-repeat: no-repeat;
+    background-size: 1269px 93px;
+    height: 93px;
+    width: 1269px;
+    margin: 0;
+    padding: 9px 4.5px;
+}
+
+#hold-area{ 
+    grid-area: hold;
+    background-image: url("../graphics_data/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 135px;
+    width: 640px;
+}
+
+.tile{
+    list-style-type: none;
+    float: left;
+}
+
+.play-tile{
+    background-color: black;
+    opacity: 0.5;
+    height: 75px;
+    width: 75px;
+    margin: 0px 4.5px;
+}
+
+.hold-tile{
+    background-color: rgb(210,177,140);
+    background-size: 60px 55px;
+    height: 60px;
+    width: 55px;
+    margin: 0px 3px;
+}
+
+#word-hold{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
+}
+
+#word-title{
+    grid-column: 1/2; 
+    grid-row: 1;
+}
+#current-word{
+    grid-column: 1/2; 
+    grid-row: 2;
+}
+#score-title{
+    grid-column: 2/3; 
+    grid-row: 1;
+}
+#current-score{
+    grid-column: 2/3; 
+    grid-row: 2;
+}
