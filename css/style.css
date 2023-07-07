@@ -210,7 +210,7 @@ a{
 	list-style-image: url('../img/star.ico');
 }
 
-#hw-content{
+#projects-content{
 	background:black;
 	color:white;
 	margin:0 10%;
@@ -218,19 +218,19 @@ a{
 	font-size: 25px;
 }
 
-#hw-content ul{
+#projects-content ul{
 	list-style-image: url('../img/star.ico');
 }
 
-#hw-content a{
+#projects-content a{
 	color:yellow;
 }
 
-#hw-content a:hover{
+#projects-content a:hover{
 	color:white;
 }
 
-#hw-content a:visited{
+#projects-content a:visited{
 	color:grey;
 }
 
